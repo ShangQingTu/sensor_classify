@@ -1,0 +1,4 @@
+gamma: 2.000, C: 0.100,  accuracy: 0.328
+gamma: 2.000, C: 0.600,  accuracy: 0.703
+gamma: 2.500, C: 0.100,  accuracy: 0.203
+gamma: 2.500, C: 0.600,  accuracy: 0.656

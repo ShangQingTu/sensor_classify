@@ -1,0 +1,60 @@
+2021-03-13 20:10:01,277 Classify INFO: category:single_mixed
+2021-03-13 20:10:01,277 Classify INFO: task:both
+2021-03-13 20:10:01,277 Classify INFO: data_dir:./data/
+2021-03-13 20:10:01,277 Classify INFO: feature_num:16
+2021-03-13 20:10:01,277 Classify INFO: force_num:3
+2021-03-13 20:10:01,277 Classify INFO: position_num:16
+2021-03-13 20:10:01,277 Classify INFO: repeat_num:3
+2021-03-13 20:10:01,277 Classify INFO: not_normalize:False
+2021-03-13 20:10:01,277 Classify INFO: model:network
+2021-03-13 20:10:01,277 Classify INFO: max_depth:4
+2021-03-13 20:10:01,278 Classify INFO: gamma:5
+2021-03-13 20:10:01,278 Classify INFO: C:1
+2021-03-13 20:10:01,278 Classify INFO: not_use_top2:False
+2021-03-13 20:10:01,278 Classify INFO: not_use_single_precision:False
+2021-03-13 20:10:01,278 Classify INFO: dim_h:1024
+2021-03-13 20:10:01,278 Classify INFO: max_epoch:25
+2021-03-13 20:10:01,278 Classify INFO: batch_size:1
+2021-03-13 20:10:01,278 Classify INFO: lr:0.003
+2021-03-13 20:10:01,278 Classify INFO: schedule_step:3
+2021-03-13 20:10:01,278 Classify INFO: weight_decay:1e-05
+2021-03-13 20:10:01,278 Classify INFO: seed:666666
+2021-03-13 20:10:01,278 Classify INFO: dropout:0.15
+2021-03-13 20:10:01,278 Classify INFO: optim:adam
+2021-03-13 20:10:01,278 Classify INFO: normalize:True
+2021-03-13 20:10:01,278 Classify INFO: category_data_dir:./data/single_mixed
+2021-03-13 20:10:01,278 Classify INFO: force_set_dir:./data/single_mixed/force
+2021-03-13 20:10:01,278 Classify INFO: position_set_dir:./data/single_mixed/position
+2021-03-13 20:10:01,278 Classify INFO: nomalized_force_set_dir:./data/single_mixed/force/nomalized
+2021-03-13 20:10:01,278 Classify INFO: nomalized_position_set_dir:./data/single_mixed/position/nomalized
+2021-03-13 20:10:01,279 Classify INFO: num_class:3
+2021-03-13 20:10:01,279 Classify INFO: [1] Building model
+2021-03-13 20:10:01,289 Classify INFO: ClassifierModel(
+  (fc_layer0): Linear(in_features=16, out_features=1024, bias=True)
+  (fc_layer1): Linear(in_features=1024, out_features=512, bias=True)
+  (fc_layer2): Linear(in_features=512, out_features=256, bias=True)
+  (fc_layer3): Linear(in_features=256, out_features=256, bias=True)
+  (fc_layer4): Linear(in_features=256, out_features=256, bias=True)
+  (fc_layer5): Linear(in_features=256, out_features=256, bias=True)
+  (fc_layer6): Linear(in_features=256, out_features=3, bias=True)
+  (relu0): ReLU()
+  (relu1): ReLU()
+  (relu2): ReLU()
+  (relu3): ReLU()
+  (relu4): ReLU()
+  (relu5): ReLU()
+  (dropout0): Dropout(p=0.15, inplace=False)
+  (dropout1): Dropout(p=0.15, inplace=False)
+  (dropout2): Dropout(p=0.15, inplace=False)
+  (dropout3): Dropout(p=0.15, inplace=False)
+  (dropout4): Dropout(p=0.15, inplace=False)
+  (dropout5): Dropout(p=0.15, inplace=False)
+)
+2021-03-13 20:10:01,290 Classify INFO: [2] Start training......
+2021-03-13 20:10:02,938 Classify INFO: progress: 0.10  train_loss: 0.0019  train_accuracy: 0.59  valid_accuracy: 0.69  valid_loss: 0.0119
+2021-03-13 20:10:04,602 Classify INFO: progress: 0.20  train_loss: 0.0018  train_accuracy: 0.64  valid_accuracy: 0.69  valid_loss: 0.0128
+2021-03-13 20:10:06,441 Classify INFO: progress: 0.30  train_loss: 0.0014  train_accuracy: 0.62  valid_accuracy: 0.72  valid_loss: 0.0108
+2021-03-13 20:10:08,235 Classify INFO: progress: 0.40  train_loss: 0.0020  train_accuracy: 0.46  valid_accuracy: 0.47  valid_loss: 0.0186
+2021-03-13 20:10:10,054 Classify INFO: progress: 0.50  train_loss: 0.0014  train_accuracy: 0.66  valid_accuracy: 0.75  valid_loss: 0.0125
+2021-03-13 20:10:11,905 Classify INFO: progress: 0.60  train_loss: 0.0016  train_accuracy: 0.68  valid_accuracy: 0.78  valid_loss: 0.0110
+2021-03-13 20:10:13,699 Classify INFO: progress: 0.69  train_loss: 0.0037  train_accuracy: 0.50  valid_accuracy: 0.47  valid_loss: 0.0301

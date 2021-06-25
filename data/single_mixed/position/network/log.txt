@@ -1,0 +1,344 @@
+2021-03-08 15:22:41,417 Classify INFO: category:single_mixed
+2021-03-08 15:22:41,418 Classify INFO: task:both
+2021-03-08 15:22:41,418 Classify INFO: data_dir:./data/
+2021-03-08 15:22:41,418 Classify INFO: feature_num:16
+2021-03-08 15:22:41,418 Classify INFO: force_num:3
+2021-03-08 15:22:41,418 Classify INFO: position_num:16
+2021-03-08 15:22:41,418 Classify INFO: repeat_num:3
+2021-03-08 15:22:41,418 Classify INFO: not_normalize:False
+2021-03-08 15:22:41,418 Classify INFO: model:network
+2021-03-08 15:22:41,418 Classify INFO: max_depth:4
+2021-03-08 15:22:41,418 Classify INFO: gamma:5
+2021-03-08 15:22:41,418 Classify INFO: C:1
+2021-03-08 15:22:41,418 Classify INFO: not_use_top2:False
+2021-03-08 15:22:41,418 Classify INFO: not_use_single_precision:False
+2021-03-08 15:22:41,418 Classify INFO: dim_h:1024
+2021-03-08 15:22:41,418 Classify INFO: max_epoch:25
+2021-03-08 15:22:41,419 Classify INFO: batch_size:1
+2021-03-08 15:22:41,419 Classify INFO: lr:0.0005
+2021-03-08 15:22:41,419 Classify INFO: schedule_step:3
+2021-03-08 15:22:41,419 Classify INFO: weight_decay:3e-06
+2021-03-08 15:22:41,419 Classify INFO: seed:666666
+2021-03-08 15:22:41,419 Classify INFO: dropout:0.15
+2021-03-08 15:22:41,419 Classify INFO: optim:adam
+2021-03-08 15:22:41,419 Classify INFO: normalize:True
+2021-03-08 15:22:41,419 Classify INFO: category_data_dir:./data/single_mixed
+2021-03-08 15:22:41,419 Classify INFO: force_set_dir:./data/single_mixed/force
+2021-03-08 15:22:41,419 Classify INFO: position_set_dir:./data/single_mixed/position
+2021-03-08 15:22:41,419 Classify INFO: nomalized_force_set_dir:./data/single_mixed/force/nomalized
+2021-03-08 15:22:41,419 Classify INFO: nomalized_position_set_dir:./data/single_mixed/position/nomalized
+2021-03-08 15:22:41,419 Classify INFO: num_class:16
+2021-03-08 15:22:41,419 Classify INFO: [1] Building model
+2021-03-08 15:22:41,425 Classify INFO: ClassifierModel(
+  (fc_layer0): Linear(in_features=16, out_features=1024, bias=True)
+  (fc_layer1): Linear(in_features=1024, out_features=512, bias=True)
+  (fc_layer2): Linear(in_features=512, out_features=256, bias=True)
+  (fc_layer3): Linear(in_features=256, out_features=16, bias=True)
+  (relu0): ReLU()
+  (relu1): ReLU()
+  (relu2): ReLU()
+  (dropout0): Dropout(p=0.15, inplace=False)
+  (dropout1): Dropout(p=0.15, inplace=False)
+  (dropout2): Dropout(p=0.15, inplace=False)
+)
+2021-03-08 15:22:41,426 Classify INFO: [2] Start training......
+2021-03-08 15:22:42,594 Classify INFO: progress: 0.10  train_loss: 0.0042  train_accuracy: 0.26  valid_accuracy: 0.27  valid_loss: 0.0378
+2021-03-08 15:22:43,751 Classify INFO: progress: 0.20  train_loss: 0.0033  train_accuracy: 0.60  valid_accuracy: 0.50  valid_loss: 0.0304
+2021-03-08 15:22:44,966 Classify INFO: progress: 0.30  train_loss: 0.0021  train_accuracy: 0.75  valid_accuracy: 0.70  valid_loss: 0.0228
+2021-03-08 15:22:46,117 Classify INFO: progress: 0.40  train_loss: 0.0014  train_accuracy: 0.82  valid_accuracy: 0.80  valid_loss: 0.0156
+2021-03-08 15:22:47,312 Classify INFO: progress: 0.50  train_loss: 0.0011  train_accuracy: 0.86  valid_accuracy: 0.81  valid_loss: 0.0112
+2021-03-08 15:22:48,509 Classify INFO: progress: 0.60  train_loss: 0.0008  train_accuracy: 0.87  valid_accuracy: 0.86  valid_loss: 0.0110
+2021-03-08 15:22:49,731 Classify INFO: progress: 0.69  train_loss: 0.0005  train_accuracy: 0.92  valid_accuracy: 0.91  valid_loss: 0.0078
+2021-03-08 15:22:50,935 Classify INFO: progress: 0.79  train_loss: 0.0014  train_accuracy: 0.81  valid_accuracy: 0.77  valid_loss: 0.0172
+2021-03-08 15:22:52,513 Classify INFO: progress: 0.89  train_loss: 0.0005  train_accuracy: 0.95  valid_accuracy: 0.95  valid_loss: 0.0060
+2021-03-08 15:22:53,776 Classify INFO: progress: 0.99  train_loss: 0.0005  train_accuracy: 0.93  valid_accuracy: 0.92  valid_loss: 0.0054
+2021-03-08 15:22:53,845 Classify INFO: val
+2021-03-08 15:22:53,846 Classify INFO: precision: 0.90625
+2021-03-08 15:22:55,142 Classify INFO: progress: 1.10  train_loss: 0.0003  train_accuracy: 0.96  valid_accuracy: 0.91  valid_loss: 0.0056
+2021-03-08 15:22:56,323 Classify INFO: progress: 1.20  train_loss: 0.0004  train_accuracy: 0.95  valid_accuracy: 0.94  valid_loss: 0.0037
+2021-03-08 15:22:57,519 Classify INFO: progress: 1.30  train_loss: 0.0003  train_accuracy: 0.96  valid_accuracy: 0.97  valid_loss: 0.0034
+2021-03-08 15:22:58,714 Classify INFO: progress: 1.40  train_loss: 0.0002  train_accuracy: 0.97  valid_accuracy: 0.97  valid_loss: 0.0033
+2021-03-08 15:22:59,905 Classify INFO: progress: 1.50  train_loss: 0.0001  train_accuracy: 0.98  valid_accuracy: 0.97  valid_loss: 0.0026
+2021-03-08 15:23:01,157 Classify INFO: progress: 1.60  train_loss: 0.0002  train_accuracy: 0.97  valid_accuracy: 0.97  valid_loss: 0.0025
+2021-03-08 15:23:02,389 Classify INFO: progress: 1.69  train_loss: 0.0002  train_accuracy: 0.97  valid_accuracy: 0.97  valid_loss: 0.0024
+2021-03-08 15:23:03,732 Classify INFO: progress: 1.79  train_loss: 0.0002  train_accuracy: 0.97  valid_accuracy: 0.95  valid_loss: 0.0028
+2021-03-08 15:23:05,383 Classify INFO: progress: 1.89  train_loss: 0.0002  train_accuracy: 0.97  valid_accuracy: 0.94  valid_loss: 0.0047
+2021-03-08 15:23:06,581 Classify INFO: progress: 1.99  train_loss: 0.0002  train_accuracy: 0.98  valid_accuracy: 0.98  valid_loss: 0.0009
+2021-03-08 15:23:06,650 Classify INFO: val
+2021-03-08 15:23:06,650 Classify INFO: precision: 1.0
+2021-03-08 15:23:07,826 Classify INFO: progress: 2.10  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0020
+2021-03-08 15:23:09,083 Classify INFO: progress: 2.20  train_loss: 0.0001  train_accuracy: 0.98  valid_accuracy: 0.95  valid_loss: 0.0023
+2021-03-08 15:23:10,288 Classify INFO: progress: 2.30  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:23:11,466 Classify INFO: progress: 2.40  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:12,681 Classify INFO: progress: 2.50  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0010
+2021-03-08 15:23:13,946 Classify INFO: progress: 2.60  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 0.95  valid_loss: 0.0016
+2021-03-08 15:23:15,287 Classify INFO: progress: 2.69  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 0.98  valid_loss: 0.0014
+2021-03-08 15:23:16,591 Classify INFO: progress: 2.79  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 0.95  valid_loss: 0.0019
+2021-03-08 15:23:17,847 Classify INFO: progress: 2.89  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.98  valid_loss: 0.0022
+2021-03-08 15:23:19,187 Classify INFO: progress: 2.99  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0016
+2021-03-08 15:23:19,253 Classify INFO: val
+2021-03-08 15:23:19,254 Classify INFO: precision: 0.96875
+2021-03-08 15:23:20,458 Classify INFO: progress: 3.10  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0012
+2021-03-08 15:23:21,662 Classify INFO: progress: 3.20  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.98  valid_loss: 0.0006
+2021-03-08 15:23:22,846 Classify INFO: progress: 3.30  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0011
+2021-03-08 15:23:24,083 Classify INFO: progress: 3.40  train_loss: 0.0001  train_accuracy: 0.99  valid_accuracy: 0.98  valid_loss: 0.0013
+2021-03-08 15:23:25,281 Classify INFO: progress: 3.50  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 0.97  valid_loss: 0.0011
+2021-03-08 15:23:26,621 Classify INFO: progress: 3.60  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 1.00  valid_loss: 0.0009
+2021-03-08 15:23:27,857 Classify INFO: progress: 3.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:23:29,156 Classify INFO: progress: 3.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.97  valid_loss: 0.0003
+2021-03-08 15:23:30,366 Classify INFO: progress: 3.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0007
+2021-03-08 15:23:31,612 Classify INFO: progress: 3.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0005
+2021-03-08 15:23:31,693 Classify INFO: val
+2021-03-08 15:23:31,693 Classify INFO: precision: 1.0
+2021-03-08 15:23:32,903 Classify INFO: progress: 4.10  train_loss: 0.0000  train_accuracy: 0.99  valid_accuracy: 0.95  valid_loss: 0.0002
+2021-03-08 15:23:34,119 Classify INFO: progress: 4.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.97  valid_loss: 0.0007
+2021-03-08 15:23:35,340 Classify INFO: progress: 4.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0005
+2021-03-08 15:23:36,610 Classify INFO: progress: 4.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:23:37,860 Classify INFO: progress: 4.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0006
+2021-03-08 15:23:39,217 Classify INFO: progress: 4.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0003
+2021-03-08 15:23:40,513 Classify INFO: progress: 4.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:23:41,707 Classify INFO: progress: 4.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:42,924 Classify INFO: progress: 4.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:44,108 Classify INFO: progress: 4.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:23:44,180 Classify INFO: val
+2021-03-08 15:23:44,180 Classify INFO: precision: 1.0
+2021-03-08 15:23:45,523 Classify INFO: progress: 5.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:23:46,847 Classify INFO: progress: 5.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:23:48,108 Classify INFO: progress: 5.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:49,398 Classify INFO: progress: 5.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:23:50,754 Classify INFO: progress: 5.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:23:51,988 Classify INFO: progress: 5.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0005
+2021-03-08 15:23:53,644 Classify INFO: progress: 5.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:54,908 Classify INFO: progress: 5.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:23:56,184 Classify INFO: progress: 5.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:23:57,477 Classify INFO: progress: 5.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:23:57,545 Classify INFO: val
+2021-03-08 15:23:57,546 Classify INFO: precision: 1.0
+2021-03-08 15:23:58,839 Classify INFO: progress: 6.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:00,105 Classify INFO: progress: 6.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:01,374 Classify INFO: progress: 6.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:02,690 Classify INFO: progress: 6.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:03,956 Classify INFO: progress: 6.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0005
+2021-03-08 15:24:05,260 Classify INFO: progress: 6.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:06,553 Classify INFO: progress: 6.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:07,813 Classify INFO: progress: 6.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:24:08,998 Classify INFO: progress: 6.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:10,170 Classify INFO: progress: 6.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:10,239 Classify INFO: val
+2021-03-08 15:24:10,240 Classify INFO: precision: 1.0
+2021-03-08 15:24:11,508 Classify INFO: progress: 7.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:24:12,739 Classify INFO: progress: 7.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:24:13,941 Classify INFO: progress: 7.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:15,199 Classify INFO: progress: 7.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:16,434 Classify INFO: progress: 7.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0000
+2021-03-08 15:24:17,629 Classify INFO: progress: 7.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:18,810 Classify INFO: progress: 7.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:20,054 Classify INFO: progress: 7.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:21,306 Classify INFO: progress: 7.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0008
+2021-03-08 15:24:22,496 Classify INFO: progress: 7.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:22,565 Classify INFO: val
+2021-03-08 15:24:22,565 Classify INFO: precision: 1.0
+2021-03-08 15:24:23,788 Classify INFO: progress: 8.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:25,079 Classify INFO: progress: 8.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:26,349 Classify INFO: progress: 8.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:24:27,660 Classify INFO: progress: 8.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:28,955 Classify INFO: progress: 8.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:30,168 Classify INFO: progress: 8.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:31,453 Classify INFO: progress: 8.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0000
+2021-03-08 15:24:32,710 Classify INFO: progress: 8.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:24:33,989 Classify INFO: progress: 8.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:35,215 Classify INFO: progress: 8.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:35,286 Classify INFO: val
+2021-03-08 15:24:35,286 Classify INFO: precision: 1.0
+2021-03-08 15:24:36,618 Classify INFO: progress: 9.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:38,051 Classify INFO: progress: 9.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:39,592 Classify INFO: progress: 9.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:40,902 Classify INFO: progress: 9.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:42,246 Classify INFO: progress: 9.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:43,480 Classify INFO: progress: 9.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:44,665 Classify INFO: progress: 9.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:45,886 Classify INFO: progress: 9.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0009
+2021-03-08 15:24:47,220 Classify INFO: progress: 9.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:48,426 Classify INFO: progress: 9.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:48,503 Classify INFO: val
+2021-03-08 15:24:48,503 Classify INFO: precision: 1.0
+2021-03-08 15:24:49,737 Classify INFO: progress: 10.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:50,944 Classify INFO: progress: 10.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:52,210 Classify INFO: progress: 10.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:24:53,503 Classify INFO: progress: 10.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:54,711 Classify INFO: progress: 10.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:55,957 Classify INFO: progress: 10.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:57,153 Classify INFO: progress: 10.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:24:58,381 Classify INFO: progress: 10.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:24:59,612 Classify INFO: progress: 10.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:00,817 Classify INFO: progress: 10.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:00,887 Classify INFO: val
+2021-03-08 15:25:00,887 Classify INFO: precision: 1.0
+2021-03-08 15:25:02,105 Classify INFO: progress: 11.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:03,350 Classify INFO: progress: 11.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:04,584 Classify INFO: progress: 11.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:05,811 Classify INFO: progress: 11.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:07,010 Classify INFO: progress: 11.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:08,250 Classify INFO: progress: 11.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:09,517 Classify INFO: progress: 11.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:10,783 Classify INFO: progress: 11.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:11,966 Classify INFO: progress: 11.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:13,140 Classify INFO: progress: 11.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:13,207 Classify INFO: val
+2021-03-08 15:25:13,207 Classify INFO: precision: 1.0
+2021-03-08 15:25:14,425 Classify INFO: progress: 12.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:15,634 Classify INFO: progress: 12.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:25:16,865 Classify INFO: progress: 12.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:18,110 Classify INFO: progress: 12.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:19,359 Classify INFO: progress: 12.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:20,852 Classify INFO: progress: 12.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:22,334 Classify INFO: progress: 12.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:23,873 Classify INFO: progress: 12.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:25,321 Classify INFO: progress: 12.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:26,911 Classify INFO: progress: 12.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:27,032 Classify INFO: val
+2021-03-08 15:25:27,032 Classify INFO: precision: 1.0
+2021-03-08 15:25:28,640 Classify INFO: progress: 13.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:30,232 Classify INFO: progress: 13.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:31,774 Classify INFO: progress: 13.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:33,112 Classify INFO: progress: 13.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:34,736 Classify INFO: progress: 13.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:36,147 Classify INFO: progress: 13.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:37,707 Classify INFO: progress: 13.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:39,165 Classify INFO: progress: 13.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:40,451 Classify INFO: progress: 13.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:41,897 Classify INFO: progress: 13.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:41,977 Classify INFO: val
+2021-03-08 15:25:41,977 Classify INFO: precision: 1.0
+2021-03-08 15:25:43,533 Classify INFO: progress: 14.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0008
+2021-03-08 15:25:44,746 Classify INFO: progress: 14.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:46,031 Classify INFO: progress: 14.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:47,531 Classify INFO: progress: 14.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:48,884 Classify INFO: progress: 14.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:25:50,105 Classify INFO: progress: 14.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:51,543 Classify INFO: progress: 14.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0003
+2021-03-08 15:25:52,812 Classify INFO: progress: 14.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:54,020 Classify INFO: progress: 14.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:55,310 Classify INFO: progress: 14.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:55,379 Classify INFO: val
+2021-03-08 15:25:55,380 Classify INFO: precision: 1.0
+2021-03-08 15:25:56,642 Classify INFO: progress: 15.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:58,011 Classify INFO: progress: 15.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:25:59,340 Classify INFO: progress: 15.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:00,592 Classify INFO: progress: 15.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:01,960 Classify INFO: progress: 15.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:03,598 Classify INFO: progress: 15.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:05,097 Classify INFO: progress: 15.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:06,493 Classify INFO: progress: 15.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:07,913 Classify INFO: progress: 15.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:09,216 Classify INFO: progress: 15.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:09,289 Classify INFO: val
+2021-03-08 15:26:09,289 Classify INFO: precision: 1.0
+2021-03-08 15:26:10,681 Classify INFO: progress: 16.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:11,965 Classify INFO: progress: 16.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:13,370 Classify INFO: progress: 16.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:14,621 Classify INFO: progress: 16.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:15,923 Classify INFO: progress: 16.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:17,457 Classify INFO: progress: 16.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:18,721 Classify INFO: progress: 16.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:20,021 Classify INFO: progress: 16.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:21,288 Classify INFO: progress: 16.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:22,542 Classify INFO: progress: 16.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:22,611 Classify INFO: val
+2021-03-08 15:26:22,612 Classify INFO: precision: 1.0
+2021-03-08 15:26:23,850 Classify INFO: progress: 17.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:26:25,066 Classify INFO: progress: 17.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0002
+2021-03-08 15:26:26,301 Classify INFO: progress: 17.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:27,482 Classify INFO: progress: 17.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0000
+2021-03-08 15:26:28,697 Classify INFO: progress: 17.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:29,955 Classify INFO: progress: 17.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:31,214 Classify INFO: progress: 17.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:32,519 Classify INFO: progress: 17.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:34,080 Classify INFO: progress: 17.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:35,402 Classify INFO: progress: 17.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:35,475 Classify INFO: val
+2021-03-08 15:26:35,475 Classify INFO: precision: 1.0
+2021-03-08 15:26:36,730 Classify INFO: progress: 18.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:38,280 Classify INFO: progress: 18.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0007
+2021-03-08 15:26:39,534 Classify INFO: progress: 18.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:40,738 Classify INFO: progress: 18.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:42,262 Classify INFO: progress: 18.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:43,781 Classify INFO: progress: 18.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:45,121 Classify INFO: progress: 18.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:46,564 Classify INFO: progress: 18.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:48,075 Classify INFO: progress: 18.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:26:49,552 Classify INFO: progress: 18.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:49,624 Classify INFO: val
+2021-03-08 15:26:49,624 Classify INFO: precision: 1.0
+2021-03-08 15:26:50,806 Classify INFO: progress: 19.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:26:52,056 Classify INFO: progress: 19.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:26:53,483 Classify INFO: progress: 19.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0001
+2021-03-08 15:26:54,850 Classify INFO: progress: 19.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0004
+2021-03-08 15:26:56,151 Classify INFO: progress: 19.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:26:57,462 Classify INFO: progress: 19.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0006
+2021-03-08 15:26:58,789 Classify INFO: progress: 19.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:00,074 Classify INFO: progress: 19.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:27:01,368 Classify INFO: progress: 19.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:03,009 Classify INFO: progress: 19.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:03,090 Classify INFO: val
+2021-03-08 15:27:03,090 Classify INFO: precision: 1.0
+2021-03-08 15:27:04,374 Classify INFO: progress: 20.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:05,756 Classify INFO: progress: 20.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:07,413 Classify INFO: progress: 20.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:08,672 Classify INFO: progress: 20.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:09,932 Classify INFO: progress: 20.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:27:11,217 Classify INFO: progress: 20.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:12,408 Classify INFO: progress: 20.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0005
+2021-03-08 15:27:13,596 Classify INFO: progress: 20.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:14,795 Classify INFO: progress: 20.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:15,994 Classify INFO: progress: 20.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:16,068 Classify INFO: val
+2021-03-08 15:27:16,068 Classify INFO: precision: 1.0
+2021-03-08 15:27:17,333 Classify INFO: progress: 21.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:18,525 Classify INFO: progress: 21.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:19,757 Classify INFO: progress: 21.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:20,995 Classify INFO: progress: 21.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:22,287 Classify INFO: progress: 21.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:23,554 Classify INFO: progress: 21.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:24,783 Classify INFO: progress: 21.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:26,050 Classify INFO: progress: 21.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:27,365 Classify INFO: progress: 21.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:28,634 Classify INFO: progress: 21.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:28,708 Classify INFO: val
+2021-03-08 15:27:28,709 Classify INFO: precision: 1.0
+2021-03-08 15:27:29,960 Classify INFO: progress: 22.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0003
+2021-03-08 15:27:31,248 Classify INFO: progress: 22.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:32,546 Classify INFO: progress: 22.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:33,785 Classify INFO: progress: 22.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:34,996 Classify INFO: progress: 22.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:36,276 Classify INFO: progress: 22.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:37,554 Classify INFO: progress: 22.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:38,819 Classify INFO: progress: 22.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:40,102 Classify INFO: progress: 22.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:41,360 Classify INFO: progress: 22.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:41,432 Classify INFO: val
+2021-03-08 15:27:41,432 Classify INFO: precision: 1.0
+2021-03-08 15:27:42,709 Classify INFO: progress: 23.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:43,934 Classify INFO: progress: 23.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0002
+2021-03-08 15:27:45,191 Classify INFO: progress: 23.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:46,407 Classify INFO: progress: 23.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:47,605 Classify INFO: progress: 23.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:48,855 Classify INFO: progress: 23.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:50,109 Classify INFO: progress: 23.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:51,880 Classify INFO: progress: 23.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:53,257 Classify INFO: progress: 23.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:54,499 Classify INFO: progress: 23.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0000
+2021-03-08 15:27:54,573 Classify INFO: val
+2021-03-08 15:27:54,573 Classify INFO: precision: 1.0
+2021-03-08 15:27:55,854 Classify INFO: progress: 24.10  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 0.98  valid_loss: 0.0000
+2021-03-08 15:27:57,063 Classify INFO: progress: 24.20  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:58,257 Classify INFO: progress: 24.30  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:27:59,477 Classify INFO: progress: 24.40  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:28:00,712 Classify INFO: progress: 24.50  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:28:01,977 Classify INFO: progress: 24.60  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:28:03,222 Classify INFO: progress: 24.69  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0001
+2021-03-08 15:28:04,482 Classify INFO: progress: 24.79  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:28:05,679 Classify INFO: progress: 24.89  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:28:06,893 Classify INFO: progress: 24.99  train_loss: 0.0000  train_accuracy: 1.00  valid_accuracy: 1.00  valid_loss: 0.0000
+2021-03-08 15:28:06,960 Classify INFO: val
+2021-03-08 15:28:06,960 Classify INFO: precision: 1.0

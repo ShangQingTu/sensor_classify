@@ -1,0 +1,10 @@
+micro_precision: 1.000 , macro_precision: 1.000  
+pricision for all classes:
+[1.]
+ micro_recall: 1.000 , macro_recall: 1.000  
+recall for all classes:
+[1.]
+ micro_f1: 1.000 , macro_f1: 1.000  
+f1 for all classes:
+[1.]
+ Valid Result:  Accuracy: 1.000

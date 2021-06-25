@@ -1,0 +1,10 @@
+micro_precision: 0.847 , macro_precision: 0.883  
+pricision for all classes:
+[1.         0.76595745]
+ micro_recall: 0.847 , macro_recall: 0.847  
+recall for all classes:
+[0.69444444 1.        ]
+ micro_f1: 0.847 , macro_f1: 0.844  
+f1 for all classes:
+[0.81967213 0.86746988]
+ Valid Result:  Accuracy: 0.847

@@ -4,11 +4,17 @@ This repository stores code and dataset for the IEEE-FLEPS 2021 paper "Piezoelec
 
 As the picture below shows, we give a lecture on the conference at `2021 June 23 17:30PM HKT`, thanks for the attendances' listening.
 
-![](./assets/FLEPS_authors.png)
+<div  align="center">
+ <img src="assets/FLEPS_authors.png" width = "800" alt="d" align=center />
+</div>
 
 # 1.Data
 
-![](./assets/method.png)
+<div  align="center">
+ <img src="assets/method.png" width = "800" alt="d" align=center />
+</div>
+
+
 
 - We collect data from `piezoelectric  panel` and processed the signal into these dataset: 
 
